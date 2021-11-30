@@ -5,7 +5,7 @@ export default class HornedBeasts extends Component{
     return (
       <div>
         <h2>{this.props.title}</h2>
-        <img src={this.props.imageURL} atl = 'A picure of a horned beast' ></img>
+        <img src={this.props.imageURL} alt ='A picure of a horned beast'></img>
         <p> {this.props.description}</p>
 
       </div>

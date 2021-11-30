@@ -1,3 +1,6 @@
+# Description:
+ This is a repo of a lab for Code Fellows Code 301. You will find PRs on seperate labs focused on how to use React.js. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
