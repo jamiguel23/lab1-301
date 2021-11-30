@@ -3,7 +3,13 @@ import { Component } from 'react';
 
 class Header extends Component{
   render() {
-    return <p>This is the Header</p>
+    return (
+     <> 
+     <h1>Lab 1</h1>
+     
+     </>
+
+    )
   }
 }
 
