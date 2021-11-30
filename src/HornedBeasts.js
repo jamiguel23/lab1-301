@@ -4,9 +4,9 @@ export default class HornedBeasts extends Component{
   render() {
     return (
       <div>
-        <h2>Name</h2>
-        <p>image</p>
-        <p> descption</p>
+        <h2>{this.props.title}</h2>
+        <img src={this.props.imageURL} atl = 'A picure of a horned beast' ></img>
+        <p> {this.props.description}</p>
 
       </div>
     )
