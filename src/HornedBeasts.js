@@ -25,7 +25,7 @@ export default class HornedBeasts extends Component{
       <div>
         <h2>{this.props.title}</h2>
         
-        <Image src={this.props.imageURL} alt ='A picure of a horned beast' roundedCircle></Image>
+        <Image src={this.props.imageURL} alt ='A picure of a horned beast' roundedCircle fluid></Image>
         <p>{'💛' + this.state.numberOfClicks}</p>
         <Button onClick={this.addFavortite}>Click Here</Button>
         <p> {this.props.description}</p>

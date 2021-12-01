@@ -1,6 +1,9 @@
 import { Component } from 'react';
 import data from './data.json';
 import HornedBeasts from './HornedBeasts.js';
+import Row from "react-bootstrap/Row"
+import Container from 'react-bootstrap/Container';
+
 
 class Main extends Component{
   render() {
@@ -12,6 +15,9 @@ class Main extends Component{
       <HornedBeasts title="Ryhno" imageURL="https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80" description="Its a family of rhyno"/> */}
 
       <div>
+        <Container fluid> 
+          <Row sm={1} md={3} lg={5} >
+
         {data.map( beast => {
           return(
             <HornedBeasts
@@ -23,6 +29,10 @@ class Main extends Component{
             />
           )
         })}
+
+        </Row>
+        </Container>
+
       </div>
       </main>
     
