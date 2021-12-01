@@ -1,73 +1,39 @@
 # Description:
  This is a repo of a lab for Code Fellows Code 301. You will find PRs on seperate labs focused on how to use React.js. 
 
-# Getting Started with Create React App
+## Author: J. Matt Miguel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Time 
+Number and name of feature: Feature 1 Display images
 
-## Available Scripts
+Estimate of time needed to complete: 1 hour
 
-In the project directory, you can run:
+Start time: 3:32
 
-### `npm start`
+Finish time: 5:36p
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Actual time needed to complete: 2:04 hours
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Number and name of feature: Feature 2 Allow users to vote for their favorite beast
 
-### `npm test`
+Estimate of time needed to complete: 1 hour
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start time: 5:40
 
-### `npm run build`
+Finish time: 7:23p
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Actual time needed to complete: 1:43
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Number and name of feature: Feature 3  Add bootstrap
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Estimate of time needed to complete: 1 hour
 
-### `npm run eject`
+Start time: 7:23p
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Finish time: 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Actual time needed to complete:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
