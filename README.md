@@ -20,8 +20,20 @@ Estimate of time needed to complete: 1 hour
 
 Start time: 5:40
 
+Finish time: 7:23p
+
+Actual time needed to complete: 1:43
+
+Number and name of feature: Feature 3  Add bootstrap
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 7:23p
+
 Finish time: 
 
 Actual time needed to complete:
+
+
 
 
