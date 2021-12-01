@@ -18,6 +18,8 @@ class Main extends Component{
             imageURL={beast.image_url}
             title={beast.title}
             description={beast.description}
+            keyword={beast.keyword}
+            horns={beast.horns}
             />
           )
         })}
