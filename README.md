@@ -34,6 +34,14 @@ Finish time:
 
 Actual time needed to complete:
 
+Number and name of feature: Lab 3 Feature 1
 
+Estimate of time needed to complete: 1.5 hours
+
+Start time: 3:11p
+
+Finish time: 4p
+
+Actual time needed to complete: 51 mins
 
 

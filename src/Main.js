@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import data from './data.json';
+// import data from './data.json';
 import HornedBeasts from './HornedBeasts.js';
 import Row from "react-bootstrap/Row"
 import Container from 'react-bootstrap/Container';
@@ -11,24 +11,23 @@ class Main extends Component{
       <>
       <main>
         <h1> {this.props.title}</h1>
-      {/* <HornedBeasts title="Narwhal" imageURL="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg" description="Its a narwal"/>
-      <HornedBeasts title="Ryhno" imageURL="https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80" description="Its a family of rhyno"/> */}
 
       <div>
+    
         <Container fluid> 
-          <Row sm={1} md={3} lg={5} >
-
-        {data.map( beast => {
-          return(
+          <Row sm={1} md={3} lg={5}>
+            {this.props.data.map(beastInfo=>
             <HornedBeasts
-            imageURL={beast.image_url}
-            title={beast.title}
-            description={beast.description}
-            keyword={beast.keyword}
-            horns={beast.horns}
-            />
-          )
-        })}
+              title={beastInfo.title}
+              imageURL={beastInfo.image_url}
+              description={beastInfo.description}
+              keyword={beastInfo.keyword}
+              horns={beastInfo.horns}
+              chosenBeast={this.props.chosenBeast}
+              />)}
+      
+          
+        
 
         </Row>
         </Container>
