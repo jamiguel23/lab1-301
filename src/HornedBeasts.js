@@ -17,11 +17,10 @@ export default class HornedBeasts extends Component{
   addFavortite = ()=> {
     this.setState({
       numberOfClicks : this.state.numberOfClicks + 1});
-      this.props.chosenBeast(this.props.title, this.props.image_url, this.props.description);
   }
 
   handleClick = () => {
-    this.props.chosenBeast(this.props.beast);
+    this.props.chosenBeast(this.props.title, this.props.image_url, this.props.description);
 
   }
 
@@ -32,12 +31,12 @@ export default class HornedBeasts extends Component{
       <div>
         <h2>{this.props.title}</h2>
         
-        <Image onClick={this.handleClick}src={this.props.imageURL} alt ='A picture of a horned beast' roundedCircle fluid></Image>
+        <Image onClick={this.handleClick}src={this.props.image_url} alt ='A picture of a horned beast' roundedCircle fluid></Image>
         <p>{'💛' + this.state.numberOfClicks}</p>
         <Button onClick={this.addFavortite}>Click Here</Button>
-        <p> {this.props.description}</p>
+        <p> Description: {this.props.description}</p>
         <p>{this.props.keyword}</p>
-        <p>{this.props.horns}</p>
+        <p> Number of Horns: {this.props.horns}</p>
 
       </div>
 

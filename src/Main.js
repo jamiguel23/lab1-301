@@ -1,5 +1,4 @@
 import { Component } from 'react';
-// import data from './data.json';
 import HornedBeasts from './HornedBeasts.js';
 import Row from "react-bootstrap/Row"
 import Container from 'react-bootstrap/Container';
@@ -19,7 +18,7 @@ class Main extends Component{
             {this.props.data.map(beastInfo=>
             <HornedBeasts
               title={beastInfo.title}
-              imageURL={beastInfo.image_url}
+              image_url={beastInfo.image_url}
               description={beastInfo.description}
               keyword={beastInfo.keyword}
               horns={beastInfo.horns}
@@ -31,16 +30,8 @@ class Main extends Component{
 
       </div>
       </main>
-    
-      
-
       </>
      )
-     
-
-     
-
-  
   }
 }
 
