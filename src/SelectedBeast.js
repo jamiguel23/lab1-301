@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Modal from 'react-bootstrap/Modal';
 import  Image  from 'react-bootstrap/Image';
-// import Button from 'react-bootstrap/Button';
 
 export default class SelectedBeast extends Component {
   render() {
@@ -24,4 +23,4 @@ export default class SelectedBeast extends Component {
   }
 }
 
-{/* <Button variant = "danger" onClick={this.props.handleCloseModal}>Close</Button> */}
+

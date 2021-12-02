@@ -25,7 +25,6 @@ export default class HornedBeasts extends Component{
 
   }
 
-  
   render() {
     return (
       <Card border = "dark">
@@ -33,7 +32,7 @@ export default class HornedBeasts extends Component{
       <div>
         <h2>{this.props.title}</h2>
         
-        <Image onClick={this.handleClick}src={this.props.imageURL} alt ='A picure of a horned beast' roundedCircle fluid></Image>
+        <Image onClick={this.handleClick}src={this.props.imageURL} alt ='A picture of a horned beast' roundedCircle fluid></Image>
         <p>{'💛' + this.state.numberOfClicks}</p>
         <Button onClick={this.addFavortite}>Click Here</Button>
         <p> {this.props.description}</p>

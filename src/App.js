@@ -41,17 +41,16 @@ export default class App extends Component {
       <div>
         <Header />
         
-
         <Main
-        data={data} 
-        chosenBeast={this.chosenBeast}
+          data={data} 
+          chosenBeast={this.chosenBeast}
         />
         <SelectedBeast 
-        title={this.state.title}
-        image_url={this.state.image_url}
-        description = {this.state.description}
-        showModal={this.state.showModal}
-        closeModal={this.closeModal}
+          title={this.state.title}
+          image_url={this.state.image_url}
+          description = {this.state.description}
+          showModal={this.state.showModal}
+          closeModal={this.closeModal}
         />
         <Footer />
        

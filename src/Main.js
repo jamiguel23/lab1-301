@@ -24,10 +24,7 @@ class Main extends Component{
               keyword={beastInfo.keyword}
               horns={beastInfo.horns}
               chosenBeast={this.props.chosenBeast}
-              />)}
-      
-          
-        
+            />)}
 
         </Row>
         </Container>
