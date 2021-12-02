@@ -17,6 +17,7 @@ export default class HornedBeasts extends Component{
   addFavortite = ()=> {
     this.setState({
       numberOfClicks : this.state.numberOfClicks + 1});
+      this.props.chosenBeast(this.props.title, this.props.image_url, this.props.description);
   }
   render() {
     return (

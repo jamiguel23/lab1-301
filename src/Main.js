@@ -22,7 +22,8 @@ class Main extends Component{
               imageURL={beastInfo.image_url}
               description={beastInfo.description}
               keyword={beastInfo.keyword}
-              horns={beastInfo.keyword}
+              horns={beastInfo.horns}
+              chosenBeast={this.props.chosenBeast}
               />)}
       
           
