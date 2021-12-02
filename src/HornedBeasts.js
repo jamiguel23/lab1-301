@@ -19,6 +19,13 @@ export default class HornedBeasts extends Component{
       numberOfClicks : this.state.numberOfClicks + 1});
       this.props.chosenBeast(this.props.title, this.props.image_url, this.props.description);
   }
+
+  handleClick = () => {
+    this.props.chosenBeast(this.props.beast);
+
+  }
+
+  
   render() {
     return (
       <Card border = "dark">
@@ -26,7 +33,7 @@ export default class HornedBeasts extends Component{
       <div>
         <h2>{this.props.title}</h2>
         
-        <Image src={this.props.imageURL} alt ='A picure of a horned beast' roundedCircle fluid></Image>
+        <Image onClick={this.handleClick}src={this.props.imageURL} alt ='A picure of a horned beast' roundedCircle fluid></Image>
         <p>{'💛' + this.state.numberOfClicks}</p>
         <Button onClick={this.addFavortite}>Click Here</Button>
         <p> {this.props.description}</p>

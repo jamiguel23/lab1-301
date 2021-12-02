@@ -7,7 +7,9 @@ export default class SelectedBeast extends Component {
   render() {
     return (
       <div>
-        <Modal show={this.props.showModal} onHide={this.props.closeModal} >
+        <Modal 
+        show={this.props.showModal} 
+        onHide={this.props.closeModal}>
           <Modal.Header>
             <Modal.Title>{this.props.title}</Modal.Title>
           </Modal.Header>
