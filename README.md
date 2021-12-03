@@ -40,8 +40,21 @@ Estimate of time needed to complete: 1.5 hours
 
 Start time: 3:11p
 
-Finish time: 4p
+Finish time: 7:30p
 
-Actual time needed to complete: 51 mins
+Actual time needed to complete: 4ish hours
+
+Number and name of feature: Lab 4 Form 
+
+Estimate of time needed to complete: 1.5 hours
+
+Start time: 2:19p
+
+Finish time: 
+
+Actual time needed to complete: 
+
+
+
 
 
