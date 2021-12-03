@@ -3,9 +3,6 @@ import HornedBeasts from './HornedBeasts.js';
 import Row from "react-bootstrap/Row"
 import Container from 'react-bootstrap/Container';
 import  Form  from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import  ListGroup  from 'react-bootstrap/ListGroup';
-import { ListGroupItem } from 'react-bootstrap';
 
 
 
@@ -38,7 +35,6 @@ class Main extends Component{
     }
 
     this.setState({horns: selectedHornArr})
-    // this.setState({ horns: event.target.value})
   }
 
   render() {
@@ -47,7 +43,9 @@ class Main extends Component{
       <main>
         <h1> {this.props.title}</h1>
         <Form>
-          
+          <p> Use the drop down menu to select the amount of horns on the beasts you want to view
+            
+          </p>
           <Form.Select onChange={this.handleChange}>
             <option value="all">all</option>
             <option value="1">1</option>
@@ -55,19 +53,14 @@ class Main extends Component{
             <option value="3">3</option>
             <option value="100">100</option>
           </Form.Select>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          <ListGroup>
-            {this.state.horns.map(horns => <ListGroup.Item key={horns}>{horns}</ListGroup.Item>)} 
-          </ListGroup>
         </Form>
 
       <div>
     
         <Container fluid> 
             <Row sm={1} md={3} lg={5}>
-              {this.props.data.map(beastInfo=>
+              {this.props.data.filter( beast => this.state.horns.includes(beast.horns))             
+              .map(beastInfo=>
               <HornedBeasts
                 title={beastInfo.title}
                 image_url={beastInfo.image_url}
