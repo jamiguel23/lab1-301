@@ -57,7 +57,7 @@ class Main extends Component{
 
       <div>
     
-        <Container fluid> 
+        <Container fluid>
             <Row sm={1} md={3} lg={5}>
               {this.props.data.filter( beast => this.state.horns.includes(beast.horns))             
               .map(beastInfo=>
