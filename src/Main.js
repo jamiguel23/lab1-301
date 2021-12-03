@@ -4,42 +4,79 @@ import Row from "react-bootstrap/Row"
 import Container from 'react-bootstrap/Container';
 import  Form  from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import  ListGroup  from 'react-bootstrap/ListGroup';
+import { ListGroupItem } from 'react-bootstrap';
 
+
+
+const numberOfHorns = [1, 2, 3, 100];
 
 class Main extends Component{
+
+  constructor(props){
+    super(props);
+    this.state ={
+      horns : numberOfHorns
+    }
+  }
+
+  handleChange = (event) => {
+    const selection = event.target.value;
+    console.log(selection);
+    let selectedHornArr;
+
+    if (selection === '1'){
+      selectedHornArr = numberOfHorns.filter(horn => (horn === 1))
+    } else if (selection === '2'){
+      selectedHornArr = numberOfHorns.filter(horn => (horn ===2))
+    }else if (selection === '3'){
+      selectedHornArr = numberOfHorns.filter(horn => (horn ===3)) 
+    }else if (selection === '100'){
+      selectedHornArr = numberOfHorns.filter(horn => (horn ===100))
+    }else if (selection === 'all'){
+      selectedHornArr = numberOfHorns
+    }
+
+    this.setState({horns: selectedHornArr})
+    // this.setState({ horns: event.target.value})
+  }
+
   render() {
     return (
       <>
       <main>
         <h1> {this.props.title}</h1>
         <Form>
-          <Form.Group className="mb-3" controlId="Horns">
-            <Form.Label>Number of Horns</Form.Label>
-            <Form.Control type="text" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
-          </Form.Group>
+          
+          <Form.Select onChange={this.handleChange}>
+            <option value="all">all</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="100">100</option>
+          </Form.Select>
             <Button variant="primary" type="submit">
               Submit
             </Button>
+          <ListGroup>
+            {this.state.horns.map(horns => <ListGroup.Item key={horns}>{horns}</ListGroup.Item>)} 
+          </ListGroup>
         </Form>
 
       <div>
     
         <Container fluid> 
-          <Row sm={1} md={3} lg={5}>
-            {this.props.data.map(beastInfo=>
-            <HornedBeasts
-              title={beastInfo.title}
-              image_url={beastInfo.image_url}
-              description={beastInfo.description}
-              keyword={beastInfo.keyword}
-              horns={beastInfo.horns}
-              chosenBeast={this.props.chosenBeast}
-            />)}
-
-        </Row>
+            <Row sm={1} md={3} lg={5}>
+              {this.props.data.map(beastInfo=>
+              <HornedBeasts
+                title={beastInfo.title}
+                image_url={beastInfo.image_url}
+                description={beastInfo.description}
+                keyword={beastInfo.keyword}
+                horns={beastInfo.horns}
+                chosenBeast={this.props.chosenBeast}
+              />)}
+            </Row>
         </Container>
 
       </div>
