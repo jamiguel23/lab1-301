@@ -1,5 +1,7 @@
 # Description:
  This is a repo of a lab for Code Fellows Code 301. You will find PRs on seperate labs focused on how to use React.js. 
+ 
+ The Horned Beast lab is a built in collection of diffrent kinds of animals with horns. If you like an beast, you can click the favorite button as many times as you like and the number will increase by 1. If you want to see the description of the image, click on the image and a pop up will show the description. You can also select to see the beasts by the number of horns.
 
 ## Author: J. Matt Miguel
 
